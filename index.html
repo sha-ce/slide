@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>mySlide</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h3>reveal.jsテンプレート
+				</h3>
+				<p>
+					<small>発表者名 : ko_suke</small>
+				</p>
+			</section>
+
+			<section data-markdown data-separator="---">
+				<textarea data-template>
+				  # タイトル１
+				  ああああ [link](https://meknowledge.jpn.org/).   
+				  改行はスペース２つにエンター
+			      ---
+				  ## タイトル２
+				  * ああああ
+				  	* tabでスペース
+					* tabでスペース
+				  * ううう
+				  ---
+				  ### タイトル３
+				  1. １ばんめ
+				  2. ２ばんめ
+				  	2. tabでスペース　２の子供になる
+				  ---
+				  ## 画像の挿入
+				  ![](https://meknowledge.jpn.org/wp-content/uploads/2020/12/mandible_36-1.png "mandible plate")
+				  ---
+				  ## すいへいせん  
+				  ***
+				  すいへいせんの下にすいへいせん 
+				  ---
+				  <font color="Red">あかいろ</font>
+				  <font color="pink">ぴんく</font>
+				  <font color="blue">あお</font>
+				  ---
+				  |h1|h2|h3|h4|
+				  |--|:--:|--:|--|
+				  |a|b|a|b|
+				  |leftleft|centercenter|rightright|b|
+				  |a|b|a|b|
+				  |a|b|a|b|
+				  |a|b|a|b|
+				  |a|b|a|b|
+					---
+					## インライン表示  
+					`int i = 0;`
+					---
+					### コードの挿入
+					```c:title
+					#include <stdio.h>	
+					int main(void)
+					{
+					  printf("hello world!\n");
+					  return 0;
+					}
+					```
+				</textarea>
+			</section>
+
+
+
+			<section>
+				<h2>こんにちは</h2>
+				<p>
+					内容内容。内容内容。内容内容。内容内容。
+				</p>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<section>
+					<h2>縦スライド</h2>
+					<p>１番上</p>
+				</section>
+				<section>
+					<h2>縦スライド２</h2>
+					<p>２番目
+					</p>
+				</section>
+			</section>
+
+			<section>
+				<h2>使い方</h2>
+				<p>
+					ESCでlide overview
+				</p>
+				<p>
+					alt押しながらclick でズーム
+				</p>
+				<p>
+					chrome F1で全画面
+				</p>
+				<p>
+					bでスライド一時停止
+				</p>
+				<p>
+					sで発表者ノート
+				</p>
+
+				<aside class="notes">
+					ここにノートかく。ここにノートかく。ここにノートかく。ここにノートかく。ここにノートかく。
+				</aside>
+
+			</section>
+
+			<section>
+				<p>r-fit-text 1行を画面いっぱいに表示する</p>
+				<h2 class="r-fit-text">綺麗な動きのためには、タグが同じ・文字が同じが重要</h2>
+			</section>
+
+			<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+				<h2 class="r-fit-text">
+					綺麗な自動アニメーションのためには、タグが同じ・文字が同じが重要
+				</h2>
+				<h4>
+					上の文字
+				</h4>
+				<p>
+					真ん中
+				</p>
+				<h4>
+					下の文字
+				</h4>
+			</section>
+			<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+				<h2 class="r-fit-text">
+					綺麗な自動アニメーションのためには、タグが同じ・文字が同じが重要
+				</h2>
+				<h4>
+					下の文字
+				</h4>
+				<p>
+					真ん中
+				</p>
+				<h4>
+					上の文字
+				</h4>
+			</section>
+
+			<section>
+				<section id="fragments">
+					<h2>アニメーション２</h2>
+					<p>トランジションを指定する</p>
+					<p class="fragment">
+						１つ目　１行目
+					</p>
+					<p>
+						<span class="fragment">
+							２つ目　２行目最初
+						</span>
+						<span class="fragment">
+							３つ目　２行目最後
+						</span>
+					</p>
+				</section>
+				<section>
+					<h2>Fragmentのトランジション</h2>
+					<p class="fragment grow">grow</p>
+					<p class="fragment shrink">shrink</p>
+					<p class="fragment fade-out">fade-out</p>
+					<p class="fragment fade-in">fade-in</p>
+					<p>
+						<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
+						<span style="display: inline-block;" class="fragment fade-up">up, </span>
+						<span style="display: inline-block;" class="fragment fade-down">down, </span>
+						<span style="display: inline-block;" class="fragment fade-left">left</span>
+					</p>
+					<p class="fragment fade-in-then-out">fade-in-then-out</p>
+					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
+					<p>
+						<span class="fragment highlight-red">
+							red
+						</span> 
+						<span class="fragment highlight-blue">
+							blue</span>
+						<span class="fragment highlight-green">
+							green
+						</span>
+					</p>
+				</section>
+			</section>
+
+			<section id="themes">
+				<h2>Themes</h2>
+				<p>
+					以下のボタンを押すことでthemeを試せる。設定はheadのCSSの読み込みのところで行う <br>
+					<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black
+						(default)</a> -
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">League</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/sky.css'); return false;">Sky</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/beige.css'); return false;">Beige</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a>
+					<br>
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/serif.css'); return false;">Serif</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/blood.css'); return false;">Blood</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/night.css'); return false;">Night</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/moon.css'); return false;">Moon</a>
+					-
+					<a href="#"
+						onclick="document.getElementById('theme').setAttribute('href','dist/theme/solarized.css'); return false;">Solarized</a>
+				</p>
+			</section>
+
+			<section>
+				<section data-background="#43d1e0">
+					<h2>スライド背景色</h2>
+					<p>
+						色
+					</p>
+					<pre>
+						<code class="hljs html">
+							<section data-background="#43d1e0">
+						</code>
+					</pre>
+
+				</section>
+
+				<section data-background="https://meknowledge.jpn.org/wp-content/uploads/2020/08/DSC_2941-scaled.jpg">
+					<h2>
+						画像の背景
+					</h2>
+					<pre>
+						<code class="hljs html">
+							<section data-background="image.png">
+						</code>
+					</pre>
+				</section>
+				
+				<section
+					data-background-video="https://meknowledge.jpn.org/wp-content/uploads/2020/12/elbow1-4.mp4"
+					data-background-color="#000000">
+
+					<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+						<h2>ビデオのバックグラウンド　divは文字を乗っけるブロック色を規定</h2>
+						<pre>
+							<code class="hljs html" style="word-wrap: break-word;">
+								<section data-background-video="video.mp4,video.webm">
+							</code>
+						</pre>
+					</div>
+
+				</section>
+
+			</section>
+
+			<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+				<h2>文字と背景のトランジションを別にする（それぞれglobal設定可能）</h2>
+				<p>
+					<pre>
+						<code class="hljs html" style="word-wrap: break-word;"><section data-transition="slide" data-background-transition="zoom">
+						</code>
+					</pre>
+				</p>
+			</section>
+
+			<section data-background-iframe="https://kindpark.jpn.org/" data-background-interactive>
+				<div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgb(255, 255, 255), 0 5px 25px rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2 style="color: #fff;">ウェブを背景にする</h2>
+					<p>ウェブの操作もできる。<br> divのスタイルは文字を載せるブロック</p>
+				</div>
+			</section>
+
+			<section data-background-iframe="graph/bargraph.html" data-background-interactive>
+				<div
+					style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgb(255, 255, 255), 0 5px 25px rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+					<h2 style="color: #fff;">chartjsで作ったグラフ（htmlファイル）はiframeで読み込むのがおすすめ</h2>
+					<p>もちろんこのコード内に記述することも可能</p>
+				</div>
+			</section>
+
+			<section>
+				<h2>順番なしリスト</h2>
+				<ul>
+					<li>No order here</li>
+					<li>あああああ</li>
+					<li>いいいいい</li>
+					<li>ううううう</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>順番ありリスト</h2>
+				<ol>
+					<li>あああああ</li>
+					<li>いいいいい</li>
+					<li>ううううう</li>
+				</ol>
+			</section>
+
+			<section>
+				<h2>テーブル</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Value</th>
+							<th>Quantity</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Apples</td>
+							<td>$1</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>Lemonade</td>
+							<td>$2</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>Bread</td>
+							<td>$3</td>
+							<td>2</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>PDF保存の仕方</h2>
+				<p>
+					コマンドプロンプトで、作業フォルダ内に入り、npm start でサーバーを立ち上げる
+				</p>
+				<p>
+					http://localhost:8000/　にアクセス
+				</p>
+				<p>
+					index.htmlがあるとそれを最初に読み込んでしまうが、そうでなければファイルを選べる
+				</p>
+			</section>
+
+			
+			<section>
+				<h2>PDF保存の仕方　つづき</h2>
+				<p>
+					ファイル.htmlを選択。http://localhost:8000/●●.htmlになっている。
+				</p>
+				<p>
+					最後に?print-pdfを付け加える。
+				</p>
+				<p>
+					http://localhost:8000/●●.html?print-pdf
+				</p>
+				<p>
+					印刷 ⇢ PDF保存 ⇢ 余白なし＋背景のグラフィックをオンにする
+				</p>
+			</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script>
+			import Reveal from 'reveal';
+			import Markdown from 'reveal/plugin/markdown/markdown.esm.js';
+
+			let deck = new Reveal({
+				plugins: [ Markdown ]
+			})
+			deck.initialize();
+		</script>
+	</body>
+</html>

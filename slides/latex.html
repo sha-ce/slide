@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>mySlide</title>
+
+		<link rel="stylesheet" href="../dist/reset.css">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/simple.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h3>TeXテンプレート
+				</h3>
+				<p>
+					<small>数式を書く手段であるTeXをマスターしよう</small>
+				</p>
+			  </section>
+			  <section>
+          <h4>四則演算</h4>
+          $$
+          1 + 2 = 3\\
+          3 - 2 = 1\\
+          3 \times 2 = 6\\
+          6 \div 3 = 2
+          $$
+			  </section>
+        <section>
+          <h4>分数</h4>
+          $$
+          \frac{1}{2} - \frac{1}{3} = \frac{1}{6}\\
+          \frac{a + b}{2ab}
+          $$
+			  </section>
+        <section>
+          <h4>上付き・下付き文字</h4>
+          $$
+          ax^2 + bx + c = 0\\
+          y = x^{\frac{1}{2}}\\
+          x_{n+1} = rx_n(1-x_n)
+          $$
+			  </section>
+				<section>
+          <h4>イコール(＝)をそろえる</h4>
+          $$
+          \begin{align}
+					f(x) &=x^2 + 3x + 2\\
+					&= (x + 1)(x + 2)
+					\end{align}
+          $$
+			  </section>
+				<section>
+          <h4>文字の間隔</h4>
+          $$
+          y \quad = ax \qquad + b\\
+					a \hspace{50pt}b \hspace{1cm} c\\
+					a\!b\,c\:d\;e\\
+					a\!\!b\,\,c\:\:\;\;e
+          $$
+			  </section>
+				<section>
+          <h4>括弧の大きさ</h4>
+          $$
+          a \Biggl(
+					b \biggl(
+					c \Bigl(
+					d \bigl(
+					e(f + g)
+					\bigr)
+					\Bigr)
+					\biggr)
+					\Biggr)
+          $$
+			  </section>
+				<section>
+          <h4>極限</h4>
+          $$
+          \lim_{x \to \infty}f(x)\\
+					\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}\\
+					\lim_{\substack{x \to \infty \ y \to \infty}}f(x,y)
+          $$
+			  </section>
+				<section>
+          <h4>平方根</h4>
+          $$
+          \sqrt{a^2 + b^2}\\
+					\sqrt[3]{a}
+          $$
+			  </section>
+				<section>
+          <h4>三角関数</h4>
+          $$
+          \sin^2 x + \cos^2 x = 1\\
+					\tan^2 x + \frac{1}{\cos^2 x} = 1
+          $$
+			  </section>
+				<section>
+          <h4>指数関数</h4>
+          $$
+          e^{i\pi} = -1\\
+					e^{i\theta} = \cos \theta + i\sin \theta\\
+					\exp(x)
+          $$
+			  </section>
+				<section>
+          <h4>対数関数・自然対数</h4>
+          $$
+          \log_a \frac{x}{y} = log_a x - \log_a y\\
+					\ln \frac{x}{y}
+          $$
+			  </section>
+				<section>
+          <h4>積分・重積分・周回積分</h4>
+					<section>
+						<h6>積分</h6>
+						$$
+						\int f(x)dx\\
+						\int_{a}^{b}f(x)dx
+						$$
+					</section>
+					<section>
+						<h6>重積分</h6>
+						$$
+						\iint f(x,y)dxdy\\
+						\idotsint f(x_1,x_2,\cdots ,x_n)dx_1dx_2\cdots dx_n
+						$$
+					</section>
+					<section>
+						<h6>周回積分</h6>
+						$$
+						\oint_C\frac{1}{z}dz
+						$$
+					</section>
+			  </section>
+				<section>
+          <h4>和・総和</h4>
+					<div style="font-size: 30px;">
+          $$
+          \sum_{k=1}^{n}k = 1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}\\
+					\sum_{k=1}^{n}k^2 = 1^2 + 2^2 + 3^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}
+          $$
+					</div>
+			  </section>
+				<section>
+          <h4>ギリシャ文字</h4>
+					<section>
+						<h6>小文字</h6>
+						$$
+						\alpha \beta \gamma \delta \epsilon \varepsilon \zeta \eta \theta \vartheta \iota \kappa \lambda
+						\mu \nu \xi o \pi \varpi \rho \varrho \sigma \varsigma \tau \upsilon \phi \varphi \chi \psi \omega
+						$$
+						</section>
+						<section>
+						<h6>大文字?</h6>
+						$$
+						\Gamma \Lambda \Sigma \Psi \delta \Xi \Upsilon \Omega \Theta \Pi \Phi \sum \prod
+						$$
+					</section>
+			  </section>
+				<section>
+          <h4>等号・不等号・集合</h4>
+          <section>
+						<h6>等号</h6>
+						$$
+						= \neq \sim \simeq \approx \fallingdotseq \risingdotseq \equiv
+						$$
+					</section>
+					<section>
+						<h6>不等号</h6>
+						$$
+						> < \geq \geqq \leq \leqq \gg \ll
+						$$
+					</section>
+					<section>
+						<h6>集合</h6>
+						$$
+						\in \ni \notin \subset \supset \subseteq \supseteq \nsubseteq \nsupseteq \subsetneq \supsetneq \cap \cup \emptyset \infty
+						$$
+					</section>
+			  </section>
+				<section>
+          <h4>矢印記号</h4>
+					<section>
+						<h6>記号</h6>
+						$$
+						\leftarrow \rightarrow \Leftarrow \Rightarrow \leftrightarrow \Leftrightarrow \mapsto \hookleftarrow \hookrightarrow \leftharpoonup \rightharpoonup \leftharpoondown \rightharpoondown \rightleftharpoons \\ \longleftarrow \longrightarrow \Longleftarrow \Longrightarrow \longleftrightarrow \Longleftrightarrow \longmapsto \nearrow \searrow \swarrow \nwarrow
+						$$
+					</section>
+					<section>
+						<h6>例式</h6>
+						<div style="font-size: 30px;">
+						$$
+						\begin{align}
+						\qquad &ax^2 + bx + c = 0\\
+						\Leftrightarrow &\quad x^2 + \frac{b}{a}x = -\frac{c}{a}\\
+						\Leftrightarrow &\quad x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = \frac{b^2}{4a^2} - \frac{c}{a}\\
+						\Leftrightarrow &\quad \Bigl(x + \frac{b}{2a}\Bigl)^2 = \frac{b^2 - 4ac}{4a^2}\\
+						\Leftrightarrow &\quad x + \frac{b}{2a} = \pm \frac{\sqrt{b^2 - 4ac}}{2a}\\
+						\therefore &\: x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+						\end{align}
+						$$
+						</div>
+					</section>
+			  </section>
+				<section>
+					<h4>アクセント記号</h4>
+          <section>
+						<h6>記号</h6>
+						$$
+						\vec{a} \acute{a} \grave{a} \hat{a} \bar{a} \breve{a} \check{a} \tilde{a} \dot{a} \ddot{a} \dddot{a} \ddddot{a}
+						$$
+					</section>
+					<section>
+						<h6>例式</h6>
+						$$
+						\vec{A} = \vec{B} + \vec{C}\\
+						F = m\ddot{x}
+						$$
+					</section>
+			  </section>
+				<section>
+          <h4>ドット</h4>
+          $$
+          \left(
+					\begin{array}{ccccc}
+					a_{11} &\cdots &a_{1i} &\cdots &a_{1n}\\
+					\vdots &\ddots &&&\vdots\\
+					a_{i1} &&a_{ii} &&a_{in}\\
+					\vdots &&&\ddots &\vdots\\
+					a_{n1} &\cdots &a_{ni} &\cdots &a_{nn}
+					\end{array}
+					\right)
+          $$
+			  </section>
+				<section>
+          <h4>行列と行列式</h4>
+          <section>
+						<h6>素</h6>
+						$$
+						\begin{matrix}
+						a & b\\
+						c & d
+						\end{matrix}
+						$$
+					</section>
+					<section>
+						<h6>丸括弧</h6>
+						$$
+						\begin{pmatrix}
+						a & b\\
+						c & d
+						\end{pmatrix}
+						$$
+					</section>
+					<section>
+						<h6>角括弧</h6>
+						$$
+						\begin{bmatrix}
+						a & b\\
+						c & d
+						\end{bmatrix}
+						$$
+					</section>
+					<section>
+						<h6>行列式</h6>
+						$$
+						\begin{vmatrix}
+						a & b\\
+						c & d
+						\end{vmatrix}
+						$$
+					</section>
+					<section>
+						<h6>行列式(重)</h6>
+						$$
+						\begin{Vmatrix}
+						a & b\\
+						c & d
+						\end{Vmatrix}
+						$$
+					</section>
+					<section>
+						<h6>行列式(計算)</h6>
+						$$
+						\begin{pmatrix}
+						a & b\\
+						c & d
+						\end{pmatrix}
+						\times
+						\begin{vmatrix}
+						e & f\\
+						g & h
+						\end{vmatrix}
+						$$
+					</section>
+			  </section>
+				<section>
+          <h4>場合分け</h4>
+          $$
+					f(x) = \left \{
+          \begin{array}{ll}
+					1 & (x \geq 0)\\
+					0 & (x \lt 0)
+					\end{array}
+					\right.
+          $$
+			  </section>
+			</div>
+		</div>
+
+		<script src="../dist/reveal.js"></script>
+		<script src="../plugin/notes/notes.js"></script>
+		<script src="../plugin/markdown/markdown.js"></script>
+		<script src="../plugin/highlight/highlight.js"></script>
+    <script src="../plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+    <script>
+      Reveal.initialize({
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          // pass other options into `MathJax.Hub.Config()`
+          TeX: { Macros: { RR: "{\\bf R}" } }
+        },
+        plugins: [ RevealMath ]
+      });
+    </script>
+		<script>
+			import Reveal from 'reveal';
+			import Markdown from 'reveal/plugin/markdown/markdown.esm.js';
+
+			let deck = new Reveal({
+				plugins: [ Markdown ]
+			})
+			deck.initialize();
+		</script>
+	</body>
+</html>
